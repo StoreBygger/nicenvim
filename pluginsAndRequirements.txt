@@ -1,0 +1,37 @@
+[lazy]
+luarocks
+
+[tree-sitter]
+tree-sitter-cli (Måtte bli installert via CARGO, og path endret. pacman versjon var utdatert (0.25 vs 0.26)
+
+[telescope]
+ripgrep
+fd (fd-find)
+
+[mason]
+npm
+nodejs
+
+[conform]
+pacman:
+  stylua
+  clang
+  shfmt
+  black (python-black via pacman, chat sa installer med pip)
+  ruff (ruff via pacman, char sa installer med pip)
+  prettier
+
+--- programmeringsspråk ---
+
+[python]
+python
+pip
+  tree-sitter-requirements !!!MULIG IKKE INSTALLERT ORDENTLIG!!!
+
+--- themes ---
+catpuccin
+onedark
+vim-moonfly-colors
+kanagawa
+tokyonight
+
