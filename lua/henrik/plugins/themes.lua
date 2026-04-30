@@ -24,7 +24,7 @@ return {
 					neotree = true,
 					treesitter_context = true,
 					rainbow_delimiters = true,
-					window_picjer = true,
+					window_picker = true,
 					blink_cmp = {
 						style = "rounded",
 					},

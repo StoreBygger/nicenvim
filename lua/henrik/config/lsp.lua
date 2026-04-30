@@ -142,3 +142,10 @@ vim.lsp.config("texlab", {
 vim.lsp.config("dockerls", {
 	capabilities = capabilities,
 })
+
+-- qmlls
+vim.lsp.config("qmlls", {
+	cmd = { "qmlls6" },
+	filetypes = { "qml", "qmljs" },
+	capabilities = capabilities,
+})

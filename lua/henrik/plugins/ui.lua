@@ -60,7 +60,15 @@ return {
 		priority = 1000,
 		lazy = false,
 		opts = {
-			image = { enabled = true },
+			image = {
+				enabled = true,
+				math = {
+					enabled = false,
+				},
+				doc = {
+					enabled = false,
+				},
+			},
 			rename = { enabled = true },
 			bigfile = {
 				notify = true,

@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- helt øverst i init.lua
 require("henrik.core")
 require("henrik.config.lazy")
 

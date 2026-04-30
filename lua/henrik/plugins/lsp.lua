@@ -29,6 +29,7 @@ return {
 				"dockerls",
 				"powershell_es",
 				"vimls",
+				"qmlls",
 			},
 
 			automatic_enable = {
