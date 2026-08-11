@@ -149,3 +149,27 @@ vim.lsp.config("qmlls", {
 	filetypes = { "qml", "qmljs" },
 	capabilities = capabilities,
 })
+
+-- matlab
+vim.lsp.config("matlab_ls", {
+	capabilities = capabilities,
+})
+
+-- Octave / MATLAB
+vim.lsp.config("mlang", {
+	cmd = {
+		"node",
+		vim.fn.expand("~/.local/share/mlang/server.js"),
+		"--stdio",
+	},
+
+	filetypes = { "matlab", "octave" },
+
+	root_markers = {
+		".git",
+	},
+
+	capabilities = capabilities,
+})
+
+vim.lsp.enable("mlang")

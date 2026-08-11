@@ -4,6 +4,8 @@ require("noice").setup({
 		view = "cmdline_popup",
 	},
 
+	lsp = { signature = { enabled = false } },
+
 	views = {
 		cmdline_popup = {
 			position = {

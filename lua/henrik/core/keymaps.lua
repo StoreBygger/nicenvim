@@ -92,3 +92,11 @@ vim.keymap.set(
 	{ desc = "Session Load CWD Session" }
 )
 vim.keymap.set("n", "<leader>sd", ":SessionManager delete_session<CR>", { desc = "Session Delete" })
+
+-- reload codeRunner
+
+vim.keymap.set("n", "<leader>rr", function()
+	package.loaded["henrik.util.codeRunner"] = nil
+	require("henrik.util.codeRunner").setup()
+	vim.notify("reloaded module")
+end)
